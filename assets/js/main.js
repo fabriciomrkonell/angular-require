@@ -1,5 +1,4 @@
 require.config({
-	baseUrl: '/',
 	paths: {
 		angular: '../vendor/angular/angular.min',
 		angularRoute: '../vendor/angular-route/angular-route.min',
@@ -33,13 +32,13 @@ require([
 		$locationProvider.html5Mode(true);
 
 		$routeProvider.when('/', {
-			templateUrl: 'assets/views/home.html',
+			templateUrl: 'angularjs-requirejs/assets/views/home.html',
 			controller: 'HomeCtrl'
 		}).when('/hello', {
-			templateUrl: 'assets/views/hello.html',
+			templateUrl: 'angularjs-requirejs/assets/views/hello.html',
 			controller: 'HelloCtrl'
 		}).when('/discussion', {
-			templateUrl: 'assets/views/discussion.html',
+			templateUrl: 'angularjs-requirejs/assets/views/discussion.html',
 			controller: 'DiscussionCtrl'
 		}).otherwise({ redirectTo: '/' });
 
