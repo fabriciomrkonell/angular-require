@@ -1,4 +1,5 @@
 require.config({
+	baseUrl: '/angularjs-requirejs/',
 	paths: {
 		angular: '../vendor/angular/angular.min',
 		angularRoute: '../vendor/angular-route/angular-route.min',
