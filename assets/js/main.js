@@ -27,18 +27,16 @@ require([
 	'constants/title'
 ], function(angular, app, domReady){
 	'use strict';
-	app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
-
-		$locationProvider.html5Mode(true);
+	app.config(['$routeProvider', function($routeProvider){
 
 		$routeProvider.when('/', {
-			templateUrl: 'angularjs-requirejs/assets/views/home.html',
+			templateUrl: 'assets/views/home.html',
 			controller: 'HomeCtrl'
 		}).when('/hello', {
-			templateUrl: 'angularjs-requirejs/assets/views/hello.html',
+			templateUrl: 'assets/views/hello.html',
 			controller: 'HelloCtrl'
 		}).when('/discussion', {
-			templateUrl: 'angularjs-requirejs/assets/views/discussion.html',
+			templateUrl: 'assets/views/discussion.html',
 			controller: 'DiscussionCtrl'
 		}).otherwise({ redirectTo: '/' });
 
