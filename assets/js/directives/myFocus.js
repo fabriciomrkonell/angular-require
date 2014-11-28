@@ -1,5 +1,5 @@
 define(['directives/directives'], function(directives){
-	directives.directive('myFocus', ['$rootScope', function($rootScope){
+	directives.directive('myFocus', [function(){
 		return {
 			restrict: 'A',
 			scope: false,
